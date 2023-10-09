@@ -1,0 +1,3 @@
+{
+  "rust-analyzer.linkedProjects": ["Cargo.toml", "poc-bug-aya-log-ebpf/Cargo.toml"]
+}
