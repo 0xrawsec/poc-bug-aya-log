@@ -1,26 +1,8 @@
 # poc-bug-aya-log
 
-## Prerequisites
+repro project for issue: https://github.com/aya-rs/aya/issues/808
 
-1. Install bpf-linker: `cargo install bpf-linker`
+# Important
 
-## Build eBPF
-
-```bash
-cargo xtask build-ebpf
-```
-
-To perform a release build you can use the `--release` flag.
-You may also change the target architecture with the `--target` flag.
-
-## Build Userspace
-
-```bash
-cargo build
-```
-
-## Run
-
-```bash
-RUST_LOG=info cargo xtask run
-```
+As the bug needs a custom `bpf-linker` to trigger, it is shipped with a compiled version of `bpf-linker`.
+This latter is located under `poc-bug-aya-log-ebpf/bpf-linker` and is used by default to link the project.
